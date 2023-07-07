@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página PIX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo do Banco">
+        </div>
+        <h2 class="text-center mb-4">PIX</h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h3>Enviar PIX</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="pix-key">Chave PIX:</label>
+                        <select class="form-control" id="pix-key" name="pix-key">
+                            <option value="random">Chave Aleatória</option>
+                            <option value="cpf">CPF</option>
+                            <option value="phone">Telefone</option>
+                            <option value="email">E-mail</option>
+                        </select>
+                        <input type="text" class="form-control mt-2" id="pix-key-value" name="pix-key-value" placeholder="Digite o valor da chave PIX">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="amount">Valor:</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">R$</span>
+                            </div>
+                            <input type="number" class="form-control" id="amount" name="amount" min="0" step="0.01" required>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="description">Descrição:</label>
+                        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                    </div>
+        
+                    <input type="submit" class="btn btn-primary btn-block" value="Enviar PIX">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

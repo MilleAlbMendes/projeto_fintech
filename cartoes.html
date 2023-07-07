@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Cartões</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo do Banco">
+        </div>
+        <h2 class="text-center mb-4">Cartões</h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h3>Cartões</h3>
+                <p>Você possui os seguintes cartões:</p>
+                <ul class="cards-list">
+                    <li>
+                        <div class="card">
+                            <img src="img/visa.png" alt="Cartão de Crédito - Visa">
+                            <span>Cartão de Crédito - Visa</span>
+                            <span class="card-details">Final 9999</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="img/visa.png" alt="Cartão de Débito - Visa">
+                            <span>Cartão de Débito - Visa</span>
+                            <span class="card-details">Final 9999</span>
+                            <div class="virtual-card-option">
+                                <button type="button" class="btn btn-primary" id="virtual-card-button">Criar Cartão Virtual</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
